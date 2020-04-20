@@ -5,10 +5,6 @@ from .forms import add_grocery_item
 
 # Create your views here.
 
-
-def index(request):
-    return HttpResponse("Suck mah nutz")
-
 # List Shopping Items in a View
 
 
