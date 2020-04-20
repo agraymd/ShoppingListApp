@@ -14,8 +14,9 @@
 
     <!-- USER INPUT AREA, ADD ITEMS TO LIST-->
     <form method="POST">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Add Item</button>
+        <label for="item_name">I Need:</label><br>
+        {{ form.item_name }}<br><br> <!--Fix this with css by adding class/ID and padding-->
+        <button type="submit" class="btn btn-success">Add Item</button>
     </form>
 
 </body>
