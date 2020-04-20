@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'ana1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3'
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'shopping_list_db',
     }
 }
