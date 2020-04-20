@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import grocery_item
+from .models import GroceryItem
 
 
 # Register your models here.
 
 #Registering Shopping List Item Model
-admin.site.register(grocery_item)
+admin.site.register(GroceryItem)

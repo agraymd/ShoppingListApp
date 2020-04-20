@@ -1,9 +1,9 @@
 from django import forms
-from .models import grocery_item
+from .models import GroceryItem
 
 class add_grocery_item(forms.ModelForm):
     
 
     class Meta:
-        model = grocery_item
+        model = GroceryItem
         fields = ('item_name',)
