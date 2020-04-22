@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
     <title>GRAY SHOPPING LIST</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -13,22 +14,21 @@
 <body>
     <div class="container">
         <div class="row" id="row1">
-          <div class="col-1 text-center">
+          <div class="col-1 col-sm-12 text-center">
             <h1 class="heading_font_google">Gray Family Shopping List</h1>
-            {% for item in grocery_objects %}
-               <p> {{ item }} | <a href="#">Delete</a></p> 
-            {% endfor %}
+           <!-- START LIST AREA -->
+            <ul id="groceryList"></ul>
+
 
             <!-- USER INPUT AREA, ADD ITEMS TO LIST-->
-            <form method="POST">{% csrf_token %}
-                <label for="item_name">I Need:</label><br>
-                {{ form.item_name }}<br><br> <!--Fix this with css by adding class/ID and padding-->
-                <button type="submit" class="btn btn-success">Add Item</button>
-            </form>
+            <input type="text" id="addItemText" class="form-control"><br />
+            <input type="button" onclick="addItem()" value="Add Item" class="btn btn-success">
             <!--END USER INPUT AREA-->
           </div><!--END COL1-12-->
         </div><!-- END ROW 1-->
     </div>
 
+
+<script src="{% static 'js/addItem.js' %}"></script><!--Javascript to add items to list with remove button.-->
 </body>
 </html>
