@@ -1,3 +1,7 @@
 .heading_font_google{
     font-family: 'Bangers', cursive;
 }
+
+input[type='text']{
+    font-size: 16px;
+}

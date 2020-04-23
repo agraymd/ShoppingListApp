@@ -33,11 +33,8 @@ function addItem(){
     // Creates variable for remove button next to list item
     var removeButton = document.createElement('button');
 
-    // Adds 'X' text to button
-    removeButton.appendChild(document.createTextNode("X"));
-
-    // Adds bootstrap button class to remove button
-    removeButton.setAttribute("class", "btn btn-danger btn-xs removeButton pull-right")
+    // Adds remove item as text to button
+    removeButton.appendChild(document.createTextNode("Remove Item"));
 
     // Removing item from list using removeButton and item ID, append button to li
     removeButton.setAttribute('onClick', 'removeItem("'+'item'+i+'")');

@@ -1,3 +1,22 @@
 .heading_font_google{
     font-family: 'Bangers', cursive;
 }
+
+/* Make input text size 16 so that no auto-zoom on mobile  */
+
+input[type='text']{
+    font-size: 18px !important;
+}
+
+/* Add padding to list so items are further apart. */
+
+ul li{
+    padding: 12px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+}
+
+/* Adds padding left to removal button so it is not jammed up next to item */
+.removeButton{
+    margin-left: 25px;
+}
