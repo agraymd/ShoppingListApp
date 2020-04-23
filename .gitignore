@@ -8,3 +8,4 @@ myvenv
 django1
 db.sqlite3
 .DS_store
+.dev.env
